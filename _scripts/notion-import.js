@@ -1,11 +1,11 @@
 const { Client } = require("@notionhq/client");
-const { NotionToMarkdown } = require("notion-to-md");
+// const { NotionToMarkdown } = require("notion-to-md");
 const moment = require("moment");
 const path = require("path");
 const fs = require("fs");
 const axios = require("axios");
 // or
-// import {NotionToMarkdown} from "notion-to-md";
+import {NotionToMarkdown} from "notion-to-md";
 
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
